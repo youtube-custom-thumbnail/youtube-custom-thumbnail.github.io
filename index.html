@@ -63,7 +63,7 @@
       var
         player,
         youTubeIframeAPIReady = false,
-        customThumbnail = document.getElementById(customThumbnail);
+        customThumbnail = document.getElementById('customThumbnail');
 
       function onYouTubeIframeAPIReady() {
         youTubeIframeAPIReady = true;
@@ -86,7 +86,7 @@
         // YT.PlayerState.PLAYING
         if (e.data == 1) {
           if(!customThumbnail) {return};
-          customThumbnail.parentNode.removeChild('customThumbnail');
+          customThumbnail.parentNode.removeChild(customThumbnail);
           customThumbnail = null;
         }
       }
